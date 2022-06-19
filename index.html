@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
 
   <!-- Стилі CSS -->
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body class="page-body">
@@ -27,7 +27,7 @@
     <div class="container page-header__container">
 
       <!-- Логотип сайту -->
-      <a class="logo link" href="./index.html" lang="en">Web<span class="logo--dark">Studio</span></a>
+      <a class="logo link" href="./index.html" lang="en">Web<span class="logo__dark">Studio</span></a>
 
       <!-- Навігація по сайту -->
       <nav class="nav page-header__nav">
@@ -45,7 +45,7 @@
       </nav>
 
       <!-- Контакти веб-студії -->
-      <ul class="contacts__list contacts__list--inline list">
+      <ul class="contacts__list list">
         <li class="contacts__item">
           <a class="contacts__link link" href="mailto:info@devstudio.com">
             <svg class="contacts__icon" width="16" height="12">
@@ -54,7 +54,7 @@
             info@devstudio.com
           </a>
         </li>
-        <li class="contacts__item page-header__contact">
+        <li class="contacts__item">
           <a class="contacts__link link" href="tel:+380961111111">
             <svg class="contacts__icon" width="10" height="16">
               <use href="./images/sprits/sprite.svg#phone"></use>
@@ -79,7 +79,7 @@
     </section>
 
     <!-- Розділ особливостей -->
-    <section class="section">
+    <section class="section features">
       <div class="container">
         <h2 class="title section__title" hidden>Особенности</h2>
 
@@ -133,31 +133,31 @@
     </section>
 
     <!-- Розділ "Ми робимо" -->
-    <section class="section section--not-top-padding">
+    <section class="section our-work">
       <div class="container">
         <h2 class="title section__title">Чем мы занимаемся</h2>
 
         <!-- Список того що ми робимо -->
-        <ul class="our-work__list list section__our-work">
+        <ul class="our-work__list list">
           <li class="our-work__item">
             <img class="img--nt-indent" src="./images/we-do/codings.jpg" alt="Десктопные приложения" width="370"
               height="294" />
             <div class="our-work__thumb">
-              <h3 class="our-work__subtitle subtitle subtitle--light">Десктопные приложения</h3>
+              <h3 class="our-work__subtitle subtitle">Десктопные приложения</h3>
             </div>
           </li>
           <li class="our-work__item">
             <img class="img--nt-indent" src="./images/we-do/phone.jpg" alt="Разрабатываем приложения для телефонов"
               width="370" height="294" />
             <div class="our-work__thumb">
-              <h3 class="our-work__subtitle subtitle subtitle--light">Мобильные приложения</h3>
+              <h3 class="our-work__subtitle subtitle">Мобильные приложения</h3>
             </div>
           </li>
           <li class="our-work__item">
             <img class="img--nt-indent" src="./images/we-do/colors.jpg" alt="Создаем цветовую гамму для вашего сайта"
               width="370" height="294" />
             <div class="our-work__thumb">
-              <h3 class="our-work__subtitle subtitle subtitle--light">Дизайнерские решения</h3>
+              <h3 class="our-work__subtitle subtitle">Дизайнерские решения</h3>
             </div>
           </li>
         </ul>
@@ -166,12 +166,12 @@
     </section>
 
     <!-- Розділ "Наша команда" -->
-    <section class="section section--dark">
+    <section class="section team">
       <div class="container">
         <h2 class="title section__title">Наша команда</h2>
 
         <!-- Список нашої команди -->
-        <ul class="team__list list section__team">
+        <ul class="team__list list">
           <li class="team__item">
             <img class="img--nt-indent" src="./images/team/igor.jpg" alt="Игорь Демьяненко - Product Designer"
               width="270" height="260" />
@@ -345,7 +345,7 @@
     </section>
 
     <!-- Розділ "Постійні клієнтти" -->
-    <section class="section">
+    <section class="section clients">
       <div class="container">
         <h2 class="title section__title">Постоянные клиенты</h2>
 
@@ -407,11 +407,10 @@
       <div>
 
         <!-- Логотип студії -->
-        <a class="logo link page-footer__logo" href="./portfolio.html" lang="en">Web<span
-            class="logo--white">Studio</span></a>
+        <a class="logo link" href="./portfolio.html" lang="en">Web<span class="logo__white">Studio</span></a>
 
         <!-- Контактна інформація -->
-        <address class="info">
+        <address class="page-footer__contacts">
 
           <a class="address-link link" href="https://goo.gl/maps/VuXHW9RfUU25sTvL6" target="_blank"
             rel="noreferrer noopener">г.
@@ -419,13 +418,12 @@
             Украинки, 26</a>
 
           <!-- Список контактів -->
-          <ul class="contacts__list list info__contacts">
-            <li class="contacts__item">
-              <a class="contacts__link link contacts__link--nt-padding"
-                href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <ul class="footer-contacts__list list">
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="contacts__item info__contact">
-              <a class="contacts__link link contacts__link--nt-padding" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
 
@@ -434,7 +432,7 @@
 
       <!-- Соціальні мережі студії -->
       <div class="social-networks page-footer__social-networks">
-        <h3 class="subtitle footer__subtitle subtitle--light">присоединяйтесь</h3>
+        <h3 class="subtitle footer__subtitle">присоединяйтесь</h3>
 
         <!-- Список соціальних мереж -->
         <ul class="social__list list">
@@ -477,7 +475,7 @@
 
       <!-- Форма підписки на розсилку -->
       <form class="subscription page-footer__subscription">
-        <h3 class="subtitle footer__subtitle subtitle--light">Подпишитесь на рассылку</h3>
+        <h3 class="subtitle footer__subtitle">Подпишитесь на рассылку</h3>
 
         <input class="subscription__input" type="email" name="email" placeholder="E-mail">
 

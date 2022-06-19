@@ -1,0 +1,23 @@
+// Utils
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/visually-hidden';
+
+// Base styles
+@import './base/reset';
+@import './base/container';
+
+// Components
+@import './components/button';
+@import './components/section-title';
+@import './components/social-list';
+
+// Layouts
+@import './layouts/page-header';
+@import './layouts/hero';
+@import './layouts/features';
+@import './layouts/our-work';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/page-footer';
+@import './layouts/backdrop';

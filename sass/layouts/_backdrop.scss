@@ -1,0 +1,14 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    height: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: getColor('shadows-one');
+
+    opacity: 1;
+    transition: opacity $time-animation $time-function,
+                visibility $time-animation $time-function;
+}

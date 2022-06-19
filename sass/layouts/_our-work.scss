@@ -1,0 +1,44 @@
+.our-work {
+    @extend %section;
+    padding-top: $zeroing-indent;
+}
+
+.our-work__list {
+    display: flex;
+
+    margin-top: $negative-card-indent;
+    margin-right: $negative-card-indent;
+    margin-bottom: $negative-card-indent;
+    margin-left: $negative-card-indent;
+}
+
+.our-work__item {
+    position: relative;
+
+    margin-top: $positive-card-indent;
+    margin-right: $positive-card-indent;
+    margin-bottom: $positive-card-indent;
+    margin-left: $positive-card-indent;
+}
+
+.our-work__thumb {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+}
+
+.our-work__subtitle {
+    @extend %subtitle;
+
+    margin-top: $zeroing-indent;
+    margin-bottom: $zeroing-indent;
+    color: getColor('white');
+}

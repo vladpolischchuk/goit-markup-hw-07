@@ -1,0 +1,97 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: getColor('main-bg-cl');
+
+    // Ставлю елементи в рядок
+    &__container {
+        display: flex;
+    }
+}
+
+// Контактна інформація
+.address-link {
+    color: getColor('white');
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+
+    transition: color $time-animation $time-function;
+
+    // Ховер та фокус
+    &:hover {
+        color: getColor('accent');
+        }
+}
+
+.page-footer__contacts {
+    margin-top: 20px;
+    margin-right: 70px;
+}
+
+.footer-contacts__item {
+    margin-top: 9px;
+}
+
+.footer-contacts__link {
+    @extend %contacts__link;
+
+    color: getColor('contact');
+    
+    font-style: normal;
+}
+
+.footer__subtitle {
+    @extend %subtitle;
+    margin-top: 12px;
+    margin-bottom: 20px;
+
+    color: getColor('white');
+}
+
+// Форма піписки на розсилку
+.page-footer__subscription {
+    margin-left: auto;
+}
+
+.subscription__input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+
+    width: 358px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    color: getColor('contact');
+    background-color: transparent;
+
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    transition: border-color $time-animation $time-function;
+
+    // Ховер та фокус
+    &:hover,
+    &:focus {
+        border-color: getColor('accent');
+        outline: none;
+    }
+}
+
+.subscription__btn {
+    display: inline-flex;
+    margin-left: 12px;
+}
+
+.subscription__icon {
+    margin-top: 3px;
+    margin-left: 10px;
+
+    fill: currentColor;
+}
