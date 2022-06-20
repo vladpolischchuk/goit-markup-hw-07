@@ -1,3 +1,4 @@
+// Розділ Герой
 .hero {
     @include padding-bg-Section(200px, 200px, getColor('main-bg-cl'));
     background-image: linear-gradient(to right,
@@ -10,6 +11,7 @@
     text-align: center;
 }
 
+// Заголовок
 .hero__title {
     max-width: 650px;
 

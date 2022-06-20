@@ -1,11 +1,14 @@
+// Розділ особливостей
 .features {
     @include padding-bg-Section($section-padding, $section-padding, transparent)
 }
 
+// Список особливостей
 .features__item {
     @include size-Cards($number-features);
 }
 
+// Картинка
 .features__wrapper {
     display: flex;
     justify-content: center;
@@ -20,6 +23,7 @@
     background-color: getColor('light-bg-cl');
 }
 
+// Опис особливостей
 .features__subtitle {
     @include margin-Title($zeroing-indent, 10px);
     @include color-Subtitle(getColor('title'));

@@ -1,3 +1,4 @@
+// Форма модального вікна(замовлення послуги)
 .form {
     padding-top: 40px;
     padding-right: 40px;
@@ -5,6 +6,7 @@
     padding-left: 40px;
 }
 
+// Заголовок форми
 .form__title {
     @include margin-Title(0px, 12px);
     @extend %title;
@@ -15,6 +17,7 @@
     text-align: center;
 }
 
+// Дані замовника
 .form__label {
     position: relative;
     display: flex;
@@ -54,6 +57,7 @@
     }
 }
 
+// Іконка для інпутів
 .form__icon {
     position: absolute;
     top: 27px;
@@ -68,6 +72,7 @@
     }
 }
 
+// Коментар, побажання замвоника
 .form__coment {
     margin-top: 4px;
     margin-bottom: 20px;
@@ -100,6 +105,7 @@
     }
 }
 
+// Політика приватності(чекбокс)
 .checkbox-group {
     text-align: center;
     padding-left: 12px;
@@ -116,6 +122,7 @@
     letter-spacing: 0.03em;
 }
 
+// Іконка чекбокса
 .checkbox__icon {
     display: inline-block;
     margin-right: 7px;

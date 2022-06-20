@@ -1,4 +1,4 @@
-// Стилі заголовків секцій
+// Стилі для заголовків секцій
 .section__title {
     @include margin-Title($zeroing-indent, 50px);
     @extend %title;

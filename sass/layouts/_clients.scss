@@ -1,7 +1,9 @@
+// Розділ постійні клієнти
 .clients {
     @include padding-bg-Section($section-padding, $section-padding, transparent);
 }
 
+// Список клієнтів
 .clients__item {
     @include size-Cards($number-clients);
     height: 92px;
@@ -33,6 +35,7 @@
     }
 }
 
+// Іконки наших клієнтів
 .clients__icon {
     width: 106px;
     height: 60px;
