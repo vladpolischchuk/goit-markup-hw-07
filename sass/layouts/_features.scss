@@ -2,12 +2,8 @@
     @include padding-bg-Section($section-padding, $section-padding, transparent)
 }
 
-.features__list {
-    display: flex;
-}
-
-.features__item:nth-child(n+2) {
-    margin-left: 30px;
+.features__item {
+    @include size-Cards($number-features);
 }
 
 .features__wrapper {

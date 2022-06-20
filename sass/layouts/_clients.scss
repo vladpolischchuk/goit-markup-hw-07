@@ -1,19 +1,10 @@
 .clients {
-    @include padding-bg-Section($section-padding, $section-padding, getColor('white'));
-}
-
-.clients__list {
-    display: flex;
+    @include padding-bg-Section($section-padding, $section-padding, transparent);
 }
 
 .clients__item {
-    width: calc((100% - 120px) / 5);
+    @include size-Cards($number-clients);
     height: 92px;
-
-    // Отступи
-    &:nth-child(n + 2) {
-        margin-left: 30px;
-    }
 }
 
 .clients__link {

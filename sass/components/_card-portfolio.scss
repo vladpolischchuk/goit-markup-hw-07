@@ -1,4 +1,8 @@
 // Картка продукту в секці портфоліо
+.product__item {
+    @include size-Cards($number-cards);
+}
+
 .product__link {
     display: block;
 
@@ -68,8 +72,8 @@
 }
 
 .product__title {
+    @include margin-Title(0px, 4px);
     @extend %title;
-    margin-bottom: 4px;
 
     font-size: 18px;
     line-height: 2;
@@ -77,8 +81,7 @@
 }
 
 .product__subtitle {
-    margin-top: $zeroing-indent;
-    margin-bottom: $zeroing-indent;
+    @include margin-Title($zeroing-indent, $zeroing-indent);
 
     line-height: 1.87;
     letter-spacing: 0.03em;

@@ -1,5 +1,5 @@
 .portfolio {
-    @include padding-bg-Section($section-padding, $section-padding, getColor('white'));
+    @include padding-bg-Section($section-padding, $section-padding, transparent);
 
     // Відступи між елементами секції
     &__filters {

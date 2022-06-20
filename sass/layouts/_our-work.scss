@@ -2,22 +2,9 @@
     @include padding-bg-Section($zeroing-indent, $section-padding, transparent)
 }
 
-.our-work__list {
-    display: flex;
-
-    margin-top: $negative-card-indent;
-    margin-right: $negative-card-indent;
-    margin-bottom: $negative-card-indent;
-    margin-left: $negative-card-indent;
-}
-
 .our-work__item {
     position: relative;
-
-    margin-top: $positive-card-indent;
-    margin-right: $positive-card-indent;
-    margin-bottom: $positive-card-indent;
-    margin-left: $positive-card-indent;
+    @include size-Cards($number-work);
 }
 
 .our-work__thumb {

@@ -6,7 +6,7 @@ $logo-font: 'Raleway', sans-serif;
 $medium-weight: 500;
 $bold-weight: 700;
 
-// Кольори та їх функція визову
+// Кольори та функція їх визову
 $colors: (
     // Текст
     'primary': #757575,
@@ -23,11 +23,11 @@ $colors: (
     'btn-hover-cl': #188CE8,
     'icon-bg-cl': #AFB1B8,
 
-    // Кольори для рамок
+    // для рамок
     'border-card-cl': #EEEEEE,
     'border-input-cl': rgba(33, 33, 33, 0.2),
 
-    // Кольори для тіней
+    // Тіні
     'shadows-one': 0 2px 1px rgba(0, 0, 0, 0.2),
     'shadows-two':  0 1px 1px rgba(0, 0, 0, 0.14),
     'shadows-three': 0 1px 3px rgba(0, 0, 0, 0.12),
@@ -49,3 +49,7 @@ $time-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 // Інше
 $number-cards: 3;
+$number-features: 4;
+$number-work: 3;
+$number-team: 4;
+$number-clients: 6;
