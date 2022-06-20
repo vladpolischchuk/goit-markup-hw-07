@@ -1,6 +1,5 @@
 .team {
-    @extend %section;
-    background-color: getColor('light-bg-cl');
+    @include padding-bg-Section($section-padding, $section-padding, getColor('light-bg-cl'));
 }
 
 .team__list {
@@ -41,10 +40,8 @@
 }
 
 .team__subtitle {
-    margin-top: $zeroing-indent;
-    margin-bottom: 10px;
-
-    color: getColor('title');
+    @include margin-Title($zeroing-indent, 10px);
+    @include color-Subtitle(getColor('title'));
 
     font-size: 16px;
     line-height: 1.18;
@@ -54,8 +51,7 @@
 }
 
 .team__description {
-    margin-top:$zeroing-indent;
-    margin-bottom: 16px;
+    @include margin-Title($zeroing-indent, 16px);
     
     font-size: 16px;
     line-height: 1.18;

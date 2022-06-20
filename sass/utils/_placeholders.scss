@@ -1,42 +1,12 @@
-// ЗАГАЛЬНІ СТИЛІ
-
-// для контактів
-%contacts__link {
-    display: inline-flex;
-    align-items: center;
-
-    font-weight: $medium-weight;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    transition: color $time-animation $time-function;
-
-    // Ховер та фокус
-    &:hover,
-    &:focus {
-        color: getColor('accent');
-    }
-}
-
-// для секцій
-%section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+// Загальні стилі
 
 // для всіх заголовків
 %title {
     color: getColor('title');
-    
-    margin-top: $zeroing-indent;
-    margin-bottom: $zeroing-indent;
 }
 
 // для всіх підзаголовків
 %subtitle {
-    color: getColor('title');
-
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;

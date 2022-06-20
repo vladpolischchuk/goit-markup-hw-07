@@ -6,9 +6,8 @@
 }
 
 .form__title {
+    @include margin-Title(0px, 12px);
     @extend %title;
-
-    margin-bottom: 12px;
 
     font-size: 20px;
     line-height: 1.15;

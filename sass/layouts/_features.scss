@@ -1,5 +1,5 @@
 .features {
-    @extend %section;
+    @include padding-bg-Section($section-padding, $section-padding, transparent)
 }
 
 .features__list {
@@ -25,15 +25,13 @@
 }
 
 .features__subtitle {
+    @include margin-Title($zeroing-indent, 10px);
+    @include color-Subtitle(getColor('title'));
     @extend %subtitle;
-
-    margin-top: $zeroing-indent;
-    margin-bottom: 10px;
 }
 
 .features__description {
-    margin-top: $zeroing-indent;
-    margin-bottom: $zeroing-indent;
+    @include margin-Title($zeroing-indent, $zeroing-indent);
 
     min-width: 270px;
 

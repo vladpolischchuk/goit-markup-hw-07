@@ -1,5 +1,5 @@
 .clients {
-    @extend %section;
+    @include padding-bg-Section($section-padding, $section-padding, getColor('white'));
 }
 
 .clients__list {

@@ -1,6 +1,7 @@
 // Utils
 @import './utils/variables';
 @import './utils/placeholders';
+@import './utils/mixins';
 @import './utils/visually-hidden';
 
 // Base styles
@@ -8,9 +9,11 @@
 @import './base/container';
 
 // Components
+@import './components/logo';
 @import './components/button';
 @import './components/section-title';
 @import './components/social-list';
+@import './components/subscription-form';
 @import './components/filters-button';
 @import './components/grit-portfolio';
 @import './components/card-portfolio';

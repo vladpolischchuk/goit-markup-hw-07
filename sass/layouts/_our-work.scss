@@ -1,6 +1,5 @@
 .our-work {
-    @extend %section;
-    padding-top: $zeroing-indent;
+    @include padding-bg-Section($zeroing-indent, $section-padding, transparent)
 }
 
 .our-work__list {
@@ -36,9 +35,7 @@
 }
 
 .our-work__subtitle {
+    @include color-Subtitle(getColor('white'));
+    @include margin-Title($zeroing-indent, $zeroing-indent);
     @extend %subtitle;
-
-    margin-top: $zeroing-indent;
-    margin-bottom: $zeroing-indent;
-    color: getColor('white');
 }
