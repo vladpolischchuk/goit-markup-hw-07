@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
 
     <!-- Стилі CSS -->
-    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body class="page-body">
@@ -28,7 +28,7 @@
         <div class="container page-header__container">
 
             <!-- Логотип сайту -->
-            <a class="logo link" href="./index.html" lang="en">Web<span class="logo--dark">Studio</span></a>
+            <a class="logo link" href="./index.html" lang="en">Web<span class="logo__dark">Studio</span></a>
 
             <!-- Навігація по сайту -->
             <nav class="nav page-header__nav">
@@ -46,7 +46,7 @@
             </nav>
 
             <!-- Контакти веб-студії -->
-            <ul class="contacts__list contacts__list--inline list">
+            <ul class="contacts__list list">
                 <li class="contacts__item">
                     <a class="contacts__link link" href="mailto:info@devstudio.com">
                         <svg class="contacts__icon" width="16" height="12">
@@ -55,7 +55,7 @@
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="contacts__item page-header__contact">
+                <li class="contacts__item">
                     <a class="contacts__link link" href="tel:+380961111111">
                         <svg class="contacts__icon" width="10" height="16">
                             <use href="./images/sprits/sprite.svg#phone"></use>
@@ -67,15 +67,16 @@
         </div>
     </header>
 
+
     <!-- Унікальний вміст сторінки -->
     <main>
         <!-- Наше портфоліо -->
-        <section class="section">
+        <section class="section portfolio">
             <div class="container">
                 <h1 class="title section__title" hidden>Портфолио</h1>
 
                 <!-- Фільтри для портфоліо -->
-                <ul class="filters__list list section__filters">
+                <ul class="filters__list list portfolio__filters">
                     <li class="filters__item"><button class="filters__btn filters__btn--active"
                             type="button">Все</button></li>
                     <li class="filters__item"><button class="filters__btn" type="button">Веб-сайты</button></li>
@@ -85,7 +86,7 @@
                 </ul>
 
                 <!-- Список наших робіт -->
-                <ul class="grid list section__grid">
+                <ul class="grid list">
 
                     <li class="grid__item">
                         <a class="product__link link" href="">
@@ -319,11 +320,10 @@
             <div>
 
                 <!-- Логотип студії -->
-                <a class="logo link page-footer__logo" href="./portfolio.html" lang="en">Web<span
-                        class="logo--white">Studio</span></a>
+                <a class="logo link" href="./portfolio.html" lang="en">Web<span class="logo__white">Studio</span></a>
 
                 <!-- Контактна інформація -->
-                <address class="info">
+                <address class="page-footer__contacts">
 
                     <a class="address-link link" href="https://goo.gl/maps/VuXHW9RfUU25sTvL6" target="_blank"
                         rel="noreferrer noopener">г.
@@ -331,15 +331,13 @@
                         Украинки, 26</a>
 
                     <!-- Список контактів -->
-                    <ul class="contacts__list list info__contacts">
-                        <li class="contacts__item">
-                            <a class="contacts__link link contacts__link--nt-padding"
+                    <ul class="footer-contacts__list list">
+                        <li class="footer-contacts__item">
+                            <a class="footer-contacts__link link"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
-                        <li class="contacts__item info__contact">
-                            <a class="contacts__link link contacts__link--nt-padding" href="tel:+380961111111">+38 096
-                                111
-                                11 11</a>
+                        <li class="footer-contacts__item">
+                            <a class="footer-contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
 
@@ -348,7 +346,7 @@
 
             <!-- Соціальні мережі студії -->
             <div class="social-networks page-footer__social-networks">
-                <h3 class="subtitle footer__subtitle subtitle--light">присоединяйтесь</h3>
+                <h3 class="subtitle footer__subtitle">присоединяйтесь</h3>
 
                 <!-- Список соціальних мереж -->
                 <ul class="social__list list">
@@ -391,7 +389,7 @@
 
             <!-- Форма підписки на розсилку -->
             <form class="subscription page-footer__subscription">
-                <h3 class="subtitle footer__subtitle subtitle--light">Подпишитесь на рассылку</h3>
+                <h3 class="subtitle footer__subtitle">Подпишитесь на рассылку</h3>
 
                 <input class="subscription__input" type="email" name="email" placeholder="E-mail">
 

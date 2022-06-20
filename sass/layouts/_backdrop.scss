@@ -12,3 +12,9 @@
     transition: opacity $time-animation $time-function,
                 visibility $time-animation $time-function;
 }
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}

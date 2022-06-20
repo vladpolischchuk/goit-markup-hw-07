@@ -11,6 +11,11 @@
 @import './components/button';
 @import './components/section-title';
 @import './components/social-list';
+@import './components/filters-button';
+@import './components/grit-portfolio';
+@import './components/card-portfolio';
+@import './components/modal-window';
+@import './components/modal-form';
 
 // Layouts
 @import './layouts/page-header';
@@ -21,3 +26,4 @@
 @import './layouts/clients';
 @import './layouts/page-footer';
 @import './layouts/backdrop';
+@import './layouts/portfolio';

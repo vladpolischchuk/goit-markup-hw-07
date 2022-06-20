@@ -62,10 +62,9 @@
     &:focus {
         color: getColor('accent');
     }
-}
 
-// Активна ссилка
-.nav__link--active {
+    // Активна ссилка
+    &--active {
     color: getColor('accent');
 
     &::after {
@@ -81,6 +80,7 @@
 
         background-color: getColor('accent');
     }
+}
 }
 
 // Контакти сайту

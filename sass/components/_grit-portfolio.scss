@@ -1,0 +1,19 @@
+// Сітка для карток портфоліо
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: $negative-card-indent;
+    margin-right: $negative-card-indent;
+    margin-bottom: $negative-card-indent;
+    margin-left: $negative-card-indent;
+}
+
+.grid__item {
+    flex-basis: calc((100% - (30px * $number-cards)) / $number-cards);
+
+    margin-top: $positive-card-indent;
+    margin-right: $positive-card-indent;
+    margin-bottom: $positive-card-indent;
+    margin-left: $positive-card-indent;
+}
