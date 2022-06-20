@@ -42,5 +42,3 @@
 @mixin size-Cards($number) {
     flex-basis: calc((100% - (30px * $number)) / $number);
 }
-
-// Анімація
