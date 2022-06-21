@@ -44,7 +44,7 @@
 }
 
 // Підзаголовок футера
-.footer__subtitle {
+.page-footer__subtitle {
     @include margin-Title(0px, 20px);
     @include color-Subtitle(getColor('white'));
     @extend %subtitle;

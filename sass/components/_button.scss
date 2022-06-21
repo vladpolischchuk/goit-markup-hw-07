@@ -22,11 +22,39 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     transition: background-color $time-animation $time-function;
+    transition: transform $time-animation $time-function, box-shadow $time-animation $time-function;
 
     // Ховер та фокус
     &:hover,
     &:focus {
         background-color: getColor('btn-hover-cl');
         cursor: pointer;
+        transform: translateY(-8px);
+        box-shadow: 0 5px 0 #1674c2;
+    }
+    
+    // Клік по кнопці
+    &:active {
+        transform: translateY(-2px);
+        box-shadow: 0 2.5px 0 #1674c2;
+    }
+}
+
+// Анімація бліку
+.button--animation {
+    position: relative;
+    overflow: hidden;
+
+    // Блік
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.5em;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.6);
+        transform: translateX(-3em) skewX(-45deg);
+        animation: move-light 3000ms infinite;
     }
 }
