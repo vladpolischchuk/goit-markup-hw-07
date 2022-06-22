@@ -22,21 +22,12 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     transition: background-color $time-animation $time-function;
-    transition: transform $time-animation $time-function, box-shadow $time-animation $time-function;
 
     // Ховер та фокус
     &:hover,
     &:focus {
         background-color: getColor('btn-hover-cl');
         cursor: pointer;
-        transform: translateY(-8px);
-        box-shadow: 0 5px 0 #1674c2;
-    }
-    
-    // Клік по кнопці
-    &:active {
-        transform: translateY(-2px);
-        box-shadow: 0 2.5px 0 #1674c2;
     }
 }
 
